@@ -5,6 +5,14 @@ body {
   background-color: #012D63;
 }
 
+.default-font {
+  font-family: serif;
+}
+
+.my-font {
+  font-family: 'MyFont';
+}
+
 @font-face {
   font-family: 'MyFont';
   src: url('PlayfairDisplay-Italic-VariableFont_wght.ttf') format('woff2');
@@ -156,6 +164,7 @@ main {
   font-size: 72px;
   color: white;
   font-family: serif;
+  font-family: 'MyFont';
 }
 
 .text4-overlay {
@@ -164,6 +173,7 @@ main {
   color: white;
   font-family: serif;
   max-width: 30em;
+  font-family: 'MyFont';
 }
 
 .text5-overlay {
@@ -193,7 +203,7 @@ main {
 
 .nike-button {
   position: relative;
-  background-color: purple;
+  background-color: #d400ff;
   text-decoration: none;
   color: white;
   padding: 10px 20px;
@@ -204,7 +214,7 @@ main {
 }
 
 .nike-button:hover {
-  background-color: #8000c0;
+  background-color: #680075;
   transform: scale(1.05);
 }
 
@@ -380,7 +390,7 @@ main {
 
 
 .animated-button:hover {
-  background-color: #45a049;
+  background-color: #680075;
   transform: scale(1.05);
 }
 
@@ -391,7 +401,7 @@ main {
   text-decoration: none;
   padding: 12px 24px;
   font-size: 25px;
-  background-color: #008120;
+  background-color: #d400ff;
   color: white;
   border: none;
   border-radius: 8px;
@@ -402,7 +412,7 @@ main {
 .basement {
   background-color: #000922;
   position: absolute;
-  height: 500px;
+  height: 400px;
   width: 1957px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -410,90 +420,13 @@ main {
   padding-left: 10em;
 }
 
-.text-Question1 {
-  position: relative;
-  top: 80px;
-  font-size: 25px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
 
-.text-Question2 {
-  top: 100px;
-  position: relative;
-  font-size: 25px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
 
-.text-Question3 {
-  top: 120px;
-  position: relative;
-  font-size: 25px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
-
-.text-Question4 {
-  top: 190px;
-  position: relative;
-  font-size: 14px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
-
-.text-Question5 {
-  top: 200px;
-  position: relative;
-  font-size: 14px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
-
-.text-Question6 {
-  left: 1500px;
-  top: 80px;
-  position: absolute;
-  font-size: 25px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
-
-.text-Question7 {
-  left: 1500px;
-  top: 135px;
-  position: absolute;
-  font-size: 25px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
-
-.text-Question8 {
-  left: 1500px;
-  top: 185px;
-  position: absolute;
-  font-size: 25px;
-  color: white;
-  font-family: serif;
-  max-width: 30em;
-  border-radius: 8px;
-}
-
-.text-Question6 a {
+/* 
+.basement a {
+  color: white
+} */
+/* .text-Question6 a {
   color: white
 }
 
@@ -503,4 +436,59 @@ main {
 
 .text-Question8 a {
   color: white
+} */
+
+.questions-block {
+  margin-left: 130px;
+  position: relative;
+  top: 70px;
+  width: 80%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.questions-block-left {
+  width: 100%;
+}
+
+.questions-block-right {
+  width: 100%;
+  text-align: right
+}
+
+.q-row, .q-row a  {
+  color: white;
+  font-size: 25px;
+  font-family: serif;
+  margin-top: 1.5rem;
+}
+
+.basement-bottom {
+  position: relative;
+  top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 87%;
+}
+
+.basement-bottom .q-row {
+  font-size: 18px;
+  margin-top: 0.5rem;
+}
+
+.basement-terms {
+  width: 100%;
+  margin-left: 130px;
+}
+
+.basement_logo .img_logo {
+  width: 100px;
+  margin-bottom: 0;
+}
+.basement_logo .text1-overlay{
+  font-size: 25px;
 }
